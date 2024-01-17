@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-outline-2 {
+        -webkit-text-stroke: 0.1px black;
+    }
+    .font-outline-4 {
+        -webkit-text-stroke: 0.3px black;
+    }
+}
+
+.body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.btn {
+    @apply cursor-pointer rounded-lg bg-columbiaBlue px-3 py-2 shadow-xl  transition-transform hover:scale-105;
+}
+
+.redBtn {
+    @apply cursor-pointer rounded-lg px-3 py-2 text-white shadow-xl  transition-transform hover:scale-105;
+}
+
+.disable {
+    @apply bg-gray-400 hover:scale-100;
+}
+
+.logo {
+    font-family: "Satisfy", cursive;
+}
